@@ -1,0 +1,12 @@
+version: 3.0
+
+services:
+  name-image:
+    container_name: name-image
+    build:
+      context: ../../
+      dockerfile: deploy/docker/Dockerfile
+    restart: unless-stopped
+#    ports:
+#      - 3000:80
+    image: name-image
